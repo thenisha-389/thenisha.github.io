@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<title>Breakfast and dairy</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+.add-to-cart__add-btn {
+    background-color: #fff;
+    border-radius: 68px;
+    color: #e96125;
+    font-size: 12px;
+    top:10px;
+}
+.add-to-cart__add-btn {
+
+    background-color: #e96125;
+    border: 1px solid #e96125;
+    color: #fff;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 14px;
+    display: inline-block;
+    height: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+/* STYLES SPECIFIC TO FOOTER  */
+.footer {
+  width: 100%;
+  position: relative;
+  height: auto;
+  background-color: #003300;
+
+}
+.footer .col {
+  width: 190px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px 20px 20px 20px;
+}
+.footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color: rgba(255,255,255,0.2);
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.250em;
+}
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer .col ul li {
+  color: #999999;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+.social ul li {
+  display: inline-block;
+  padding-right: 5px !important;
+}
+
+.footer .col ul li:hover {
+  color: #ffffff;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+.clearfix {
+  clear: both;
+}
+@media only screen and (min-width: 1280px) {
+  .contain {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1139px) {
+  .contain .social {
+    width: 1000px;
+    display: block;
+  }
+  .social h1 {
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .footer .col {
+    width: 33%;
+  }
+  .footer .col h1 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 500px) {
+    .footer .col {
+      width: 50%;
+    }
+    .footer .col h1 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+}
+@media only screen and (max-width: 340px) {
+  .footer .col {
+    width: 100%;
+  }
+}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+    <div class="w3-container">
+      <a href="#s" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+        <i class="fa fa-remove"></i>
+      </a>
+      <img src="img36.jpg" height=150 width=150 style="width:45%;" class="w3-round"><br><br>
+      <h4><b>Breakfast and dairy</b></h4>
+
+    </div>
+    <div class="w3-bar-block">
+
+<a href="productpage.php" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cart-plus" style="font-size:24px"></i>   Grocery & Staples</a>
+      <a href="productpage1.php" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cart-plus" style="font-size:24px"></i>Biscuits, Snacks and Chocolates</a>
+      <a href="productpage2.php" onclick="w3_close()" class="w3-bar-item w3-button w3-padding  w3-text-teal"><i class="fa fa-cart-plus" style="font-size:24px"></i> Breakfast and dairy</a>
+      <a href="productpage3.php" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cart-plus" style="font-size:24px"></i> Drinks and Beverages</a>
+    </div>
+
+  </nav>
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+
+      <div class="w3-container w3-white">
+        <p><b></b></p>
+        <h4>Bread</h4>
+        <img src="img18.jpg" height=200 width=200 alt="Norway" style="width:100%" class="w3-hover-opacity" >
+        <p>Udhaiyam</p>
+      <h6>1 Kg</h6>
+      <p>&#8377;69</p>
+      <center><button class="add-to-cart__add-btn display--inline-block" data-test-id="add-button">Add To Cart</button></center>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p><b></b></p>
+        <h4>Butter </h4>
+        <img src="img19.jpg" height=200 width=200 alt="Norway" style="width:100%" class="w3-hover-opacity">
+        <p>Whole Wheat Atta</p>
+      <h6>1 Kg</h6>
+      <p>&#8377;46</p>
+      <center><button class="add-to-cart__add-btn display--inline-block" data-test-id="add-button">Add To Cart</button></center>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <div class="w3-container w3-white">
+        <p><b></b></p>
+        <h4>Paneer</h4>
+        <img src="img20.jpg" height=200 width=200 alt="Norway" style="width:100%" class="w3-hover-opacity">
+        <p>Udhaiyam</p>
+      <h6>1 Kg</h6>
+      <p>&#8377;83</p>
+      <center><button class="add-to-cart__add-btn display--inline-block" data-test-id="add-button">Add To Cart</button></center>
+      </div>
+    </div>
+  </div>
+
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p><b></b></p>
+        <h4>Sauce</h4>
+        <img src="img21.jpg" height=200 width=200 alt="Norway" style="width:100%" class="w3-hover-opacity">
+        <p>Gold Winner</p>
+      <h6>5 lt</h6>
+      <p>&#8377;484</p>
+      <center><button class="add-to-cart__add-btn display--inline-block" data-test-id="add-button">Add To Cart</button></center>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p><b></b></p>
+        <h4>Oats</h4>
+        <img src="img22.jpg" height=200 width=200 alt="Norway" style="width:100%" class="w3-hover-opacity">
+        <p>Safe Harvest</p>
+      <h6>100 gm</h6>
+      <p>&#8377;20</p>
+      <center><button class="add-to-cart__add-btn display--inline-block" data-test-id="add-button">Add To Cart</button></center>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <div class="w3-container w3-white">
+        <p><b></b></p>
+        <h4>Ghee</h4>
+        <img src="img23.jpg" height=200 width=200 alt="Norway" style="width:100%" class="w3-hover-opacity">
+        <p>Tata Lite</p>
+      <h6>1 Kg</h6>
+      <p>&#8377;31</p>
+      <center><button class="add-to-cart__add-btn display--inline-block" data-test-id="add-button">Add To Cart</button></center>
+      </div>
+    </div>
+  </div>
+  <!-- Third Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p><b></b></p>
+        <h4>Curd</h4>
+        <img src="img24.jpg" height=200 width=200 alt="Norway" style="width:100%" class="w3-hover-opacity">
+        <p>Gold Winner</p>
+      <h6>5 lt</h6>
+      <p>&#8377;484</p>
+      <center><button class="add-to-cart__add-btn display--inline-block" data-test-id="add-button">Add To Cart</button></center>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p><b></b></p>
+        <h4>Corn Flakes</h4>
+        <img src="img25.jpg" height=200 width=200 alt="Norway" style="width:100%" class="w3-hover-opacity">
+        <p>Safe Harvest</p>
+      <h6>100 gm</h6>
+      <p>&#8377;20</p>
+      <center><button class="add-to-cart__add-btn display--inline-block" data-test-id="add-button">Add To Cart</button></center>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <div class="w3-container w3-white">
+        <p><b></b></p>
+        <h4>Noodles</h4>
+        <img src="img26.jpg" height=200 width=200 alt="Norway" style="width:100%" class="w3-hover-opacity">
+        <p>Tata Lite</p>
+      <h6>1 Kg</h6>
+      <p>&#8377;31</p>
+      <center><button class="add-to-cart__add-btn display--inline-block" data-test-id="add-button">Add To Cart</button></center>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="productpage.html" class="w3-bar-item  w3-button w3-hover-black">1</a>
+      <a href="productpage1.html" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="productpage2.html" class="w3-bar-item w3-black w3-button ">3</a>
+      <a href="productpage3.html" class="w3-bar-item  w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+
+
+<!-- End page content -->
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<!-- FOOTER START -->
+<div class="footer">
+  <div class="contain">
+  <div class="col">
+    <h1>Company</h1>
+    <ul>
+      <li>About</li>
+      <li>Mission</li>
+      <li>Services</li>
+      <li>Social</li>
+      <li>Get in touch</li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1>Products</h1>
+    <ul>
+      <li>About</li>
+      <li>Mission</li>
+      <li>Services</li>
+      <li>Social</li>
+      <li>Get in touch</li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1>Accounts</h1>
+    <ul>
+      <li>About</li>
+      <li>Mission</li>
+      <li>Services</li>
+      <li>Social</li>
+      <li>Get in touch</li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1>Resources</h1>
+    <ul>
+      <li>Webmail</li>
+      <li>Redeem code</li>
+      <li>WHOIS lookup</li>
+      <li>Site map</li>
+      <li>Web templates</li>
+      <li>Email templates</li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1>Support</h1>
+    <ul>
+      <li>Contact us</li>
+      <li>Web chat</li>
+      <li>Open ticket</li>
+    </ul>
+  </div>
+  <div class="col social">
+    <h1>Social</h1>
+    <ul>
+      <li><img src="https://svgshare.com/i/5fq.svg" width="32" style="width: 32px;"></li>
+      <li><img src="https://svgshare.com/i/5eA.svg" width="32" style="width: 32px;"></li>
+      <li><img src="https://svgshare.com/i/5f_.svg" width="32" style="width: 32px;"></li>
+    </ul>
+  </div>
+<div class="clearfix"></div>
+</div>
+</div>
+<!-- END OF FOOTER -->
+
+</body>
+</html>
