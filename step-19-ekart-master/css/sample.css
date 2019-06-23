@@ -1,0 +1,87 @@
+*{
+    font-family: 'Lato', sans-serif;
+}
+header,footer{
+    background:#581845;
+    padding:20px;
+    color:yellow;
+    min-height: 40px;
+    
+
+}
+.fleft{
+    float:left;
+}
+.fright{
+    float:right;
+}
+.clearfix{
+    clear: both;
+}
+.add_product_form{
+    width:500px;
+    margin:20px auto;
+    font-weight:300;
+    color:#4a4a4a;
+}
+.add_product_form input,.add_product_form textarea,.add_product_form select{
+    width:100%;
+    border-radius:0;
+    padding:10px 20px;
+    border: 1px solid #581845;
+
+}
+.add_product_form input:focus,textarea:focus,select:focus{
+    outline:0;
+}
+.add_product_form label{
+    color:#4a4a4a;
+    font-size:1 rem;
+    font-weight:300;
+    display:inline-block;
+    margin:10px 0;
+
+}
+.add_product_form textarea{
+    resize:none;
+}
+.add_product_form .half{
+    width:50%;
+    display:inline-block;
+}
+.add_product_form select:hover{
+    cursor:pointer;
+}
+.add_product_form select{
+    border-radius:0;
+    outline:none;
+    overflow:hidden;
+    height:40px;
+    color:white;
+}
+.add_product_form button{
+    width:100px;
+    display:block;
+    background:#581845;
+    color:white;
+    text-transform:uppercase;
+    margin:20px auto;
+    padding:10px;
+}
+.link-group img{
+    width:30px;
+}
+header a{
+    color:#f7c444;
+    text-decoration:none;
+}
+header ul li{
+    display:inline-block;
+    padding:20px;
+    font-size:0.8rem;
+}
+.add_product_form h2{
+    text-align:center;
+    font-size:1.5rem;
+    color:#4a4a4a;
+}

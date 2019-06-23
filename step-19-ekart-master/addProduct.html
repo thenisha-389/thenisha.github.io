@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Product</title>
+        
+        <link rel="stylesheet" type="text/css" href="./css/reset.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./css/sample.css">
+        
+    </head>
+    <body>
+        <header>
+            <img class="fleft logo" src="./images/logo.png" alt="logo">
+            <ul class="fright">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ADD PRODUCT</a></li>
+            </ul>
+        </header>
+        <div cass="clearfix">
+        </div>
+        <section>
+            
+            <form method="POST" action="#" class="add_product_form">
+                    <h2>Add a New Product</h2>
+                <ul>
+                    <li>
+                        <label for="name">Product name</label>
+                        <input type="text" name="name"  id="name" required/>
+                    </li>
+                    <li>
+                        <label for="brand">Brand</label>
+                        <input type="text" name="brand" id="brand" required/>
+                    </li>
+                    <li>
+                        <div class="half">
+                            <label for="category">Category</label>
+                            <select name="category" id="category"> 
+                                <option value="men">Men</option>
+                                <option value="women">Women</option>
+                                <option value="ids">Kids</option>
+                            </select>
+                        </div><div class="half">
+                            <label for="rating">Rating</label>
+                            <select name="rating" id="rating">
+                                <option value="5">5</option>
+                                <option value="4">4</option>
+                                <option value="3">3</option>
+                                <option value="2">2</option>
+                                <option value="1">1</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="price">Price</label>
+                        <input type="number" name="price" id="price"  required/>
+                    </li>
+                    <li>
+                            <label for="description">Short Description</label>
+                            <textarea rows="6"></textarea>  
+                    </li>
+                    <li>
+                            <label for="productImg">Product Image URL</label>
+                            <input type="url" name="productImg" id="productImg" required/>
+                    </li>
+                    <li>
+                            <div class="half">
+                                <label for="size">Size</label>
+                                <select name="size" id="size">
+                                    <option value="xs">XS</option>
+                                    <option value="s">S</option>
+                                    <option value="m">M</option>
+                                    <option value="l">L</option>
+                                    <option value="xl">XL</option>
+                                </select>
+                            </div><div class="half">
+                                <label for="colour">Colour</label>
+                                <select name="colour" id="colour">
+                                    <option value="red">Red</option>
+                                    <option value="green">Green</option>
+                                    <option value="yellow">Yellow</option>
+                                    <option value="blue">Blue</option>
+                                    <option value="pink">Pink</option>
+                                </select>
+                            </div>
+                        </li>
+                </ul>
+                <button id="submit">SAVE</button>
+            </form>
+            <div class="wrapper"></div>
+            <div class="wrapper"></div>
+        </section>
+        <footer>
+            <div class="link-group fleft">
+                <a href="http://www.facebook.com">
+                    <img src="./images/facebook.png" alt="facebook"/>
+                </a>
+                <a href="http://www.instagram.com">
+                    <img src="./images/instagram.png" alt="instagram"/>
+                </a>
+                <a href="http://www.twitter.com">
+                    <img src="./images/twitter.png" alt="twitter"/>
+                </a>
+            </div>
+            <img class="fright logo" src="./images/logo.png" alt="logo"/>
+            
+        </footer>
+    </body>
+</html>
